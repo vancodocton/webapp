@@ -29,7 +29,7 @@
             <p id="json-decode"></p>
         </div>
         <!-- Optional JavaScript -->
-        <script>
+        <script type="text/jsx">
             var xhttp = new XMLHttpRequest();
             let array;
             xhttp.onreadystatechange = function () {
