@@ -51,7 +51,7 @@
         <!-- Optional JavaScript -->
         <script type="text/jsx">
             var xhttp = new XMLHttpRequest();
-            let array;
+            let array = [];
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     var strJSON = this.responseText;
