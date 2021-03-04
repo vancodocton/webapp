@@ -36,16 +36,20 @@
 		<div>
 			<h1>JSON</h1>
 			<p id="json-encode"></p>
+			<p id="json-decode"></p>
 		</div>
         <!-- Optional JavaScript -->
 		<script>
-
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() 
 			{
 				if (this.readyState == 4 && this.status == 200) 
 				{
-					document.getElementById("json-encode").innerHTML = this.responseText;
+					var strJSON = this.responseText;
+					document.getElementById("json-encode").innerHTML = strJSON;
+
+					var array = JSON.parse(strJSON);
+					document.getElementById("json-decode").innerHTML = array[0]['name'];
 				}
 			};
 			xhttp.open("GET", "./loadProducts.php", true);

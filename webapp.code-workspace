@@ -4,5 +4,23 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Edge",
+				"request": "launch",
+				"type": "pwa-msedge",
+				"url": "http://localhost",
+				"webRoot": "${workspaceFolder}"
+			},
+			{
+				"name": "Launch home.html in Microsoft Edge",
+				"type": "edge",
+				"request": "launch",
+				"file": "${workspaceFolder}/home.html",
+			},
+		]
+	}
 }
