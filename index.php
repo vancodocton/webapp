@@ -66,7 +66,7 @@
             xhttp.send();
             const App = () => {
                 return (
-                    <table class="table table-responsive-md table-striped">
+                    <table className="table table-responsive-md table-striped">
                         <caption>Table caption</caption>
                         <thead>
                             <tr>
@@ -78,13 +78,13 @@
                         </thead>
                         <tbody>
                             {array.map((item, index) => {
-                                return;
+                                return(
                                 <tr key={index}>
                                     <th scope="row">{item.id}</th>
                                     <td>{item.name}</td>
                                     <td>{item.unitprice}</td>
                                     <td>null</td>
-                                </tr>;
+                                </tr>)
                             })}
                         </tbody>
                     </table>
