@@ -70,7 +70,7 @@
                     </table>
                 );
             };
-            ReactDom.render(<App />, document.getElementById("root"));
+            ReactDOM.render(<App />, document.getElementById("root"));
         </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script
