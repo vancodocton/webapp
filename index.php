@@ -35,7 +35,7 @@
         ></script>
 		<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> 
         <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     </head>
     <body>
         <h1>Index page</h1>
@@ -49,7 +49,7 @@
             <p id="json-decode"></p>
         </div>
         <!-- Optional JavaScript -->
-        <script type="text/jsx">
+        <script type="text/babel">
             var xhttp = new XMLHttpRequest();
             let array = [];
             xhttp.onreadystatechange = function () {
