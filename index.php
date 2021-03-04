@@ -90,8 +90,6 @@
             };
             xhttp.open("GET", "./loadProducts.php", true);
             xhttp.send();
-            console.log(array);
-            
         </script>
     </body>
 </html>
