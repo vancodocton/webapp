@@ -64,6 +64,7 @@
             };
             xhttp.open("GET", "./loadProducts.php", true);
             xhttp.send();
+            console.log(array);
             const App = () => {
                 return (
                     <table className="table table-responsive-md table-striped">
