@@ -31,7 +31,7 @@
         <!-- Optional JavaScript -->
         <script>
             var xhttp = new XMLHttpRequest();
-            let array;
+            let array = [];
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     var strJSON = this.responseText;
@@ -44,56 +44,9 @@
             };
             xhttp.open("GET", "./loadProducts.php", true);
             xhttp.send();
-            const App = () => {
-                return (
-                    <table class="table table-responsive-md table-striped">
-                        <caption>Table caption</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Product Name</th>
-                                <th scope="col">Unit Price</th>
-                                <th scope="col">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {array.map((item, index) => {
-                                return;
-                                <tr key={index}>
-                                    <th scope="row">{item.id}</th>
-                                    <td>{item.name}</td>
-                                    <td>{item.unitprice}</td>
-                                    <td>null</td>
-                                </tr>;
-                            })}
-                        </tbody>
-                    </table>
-                );
-            };
-			'use strict';
 
-const e = React.createElement;
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#root');ReactDOM.render(e(LikeButton), domContainer);
+const domContainer = document.querySelector('#root');ReactDOM.render(<h1>Hello</h1>, domContainer);
         </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script
@@ -111,14 +64,7 @@ const domContainer = document.querySelector('#root');ReactDOM.render(e(LikeButto
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
-        <script
-            crossorigin
-            src="https://unpkg.com/react@17/umd/react.development.js"
-        ></script>
-        <script
-            crossorigin
-            src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-        ></script>
+		<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
         <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     </body>
 </html>
