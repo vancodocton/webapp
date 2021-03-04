@@ -63,8 +63,6 @@
             };
             xhttp.open("GET", "./loadProducts.php", true);
             xhttp.send();
-
-        const domContainer = document.querySelector('#root');ReactDOM.render(<h1>Hello</h1>, domContainer);
        
     </body>
 </html>
