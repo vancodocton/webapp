@@ -62,6 +62,6 @@
             };
             xhttp.open("GET", "./loadProducts.php", true);
             xhttp.send();
-       
+       <script/>
     </body>
 </html>
