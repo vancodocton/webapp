@@ -49,19 +49,20 @@
         </div>
         <!-- Optional JavaScript -->
         <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    var strJSON = this.responseText;
-                    document.getElementById("json-encode").innerHTML = strJSON;
+            // var xhttp = new XMLHttpRequest();
+            // xhttp.onreadystatechange = function () {
+            //     if (this.readyState == 4 && this.status == 200) {
+            //         var strJSON = this.responseText;
+            //         document.getElementById("json-encode").innerHTML = strJSON;
 
-                    var array = JSON.parse(strJSON);
-                    document.getElementById("json-decode").innerHTML =
-                        array[0]["name"];
-                }
-            };
-            xhttp.open("GET", "./loadProducts.php", true);
-            xhttp.send();
+            //         var array = JSON.parse(strJSON);
+            //         document.getElementById("json-decode").innerHTML =
+            //             array[0]["name"];
+            //     }
+            // };
+            // xhttp.open("GET", "./loadProducts.php", true);
+            // xhttp.send();
+            ReactDOM.render(<h1>Hello</h1>, document.getElementById('root'));
        </script>
     </body>
 </html>
