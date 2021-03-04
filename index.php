@@ -50,13 +50,12 @@
         <!-- Optional JavaScript -->
         <script>
             var xhttp = new XMLHttpRequest();
-            let array = [];
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     var strJSON = this.responseText;
                     document.getElementById("json-encode").innerHTML = strJSON;
 
-                    array = JSON.parse(strJSON);
+                    var array = JSON.parse(strJSON);
                     document.getElementById("json-decode").innerHTML =
                         array[0]["name"];
                 }
